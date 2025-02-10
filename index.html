@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>$SPAM | Memecoin to the Moon</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="moving-text">🔥🚀 $SPAM TO THE MOON 🚀🔥</div>
+
+    <!-- 🚀 Vallende Emoji's -->
+    <div class="emoji-container"></div>
+
+    <div class="container">
+        <h1>SPAM SPAM SPAM</h1>
+        <div class="ticker">$SPAM</div>
+        <img src="IMG_6717.JPG" alt="Token Logo">
+        <p>The official $SPAM meme!</p>
+        <div class="contract">SOON...</div>
+        <a href="#" class="buy-button">BUY NOW</a>
+
+        <div class="social-icons">
+            <a href="https://t.me/SPAM_SOLANA" target="_blank">📱 Telegram</a>  
+            <a href="https://x.com/spamonsolana" target="_blank">𝕏 Twitter</a>
+        </div>
+
+        <div class="footer">Powered by $SPAM ® 2025</div>
+    </div>
+
+    <!-- 🎉 Vallende emoji's via JavaScript -->
+    <script>
+        function createFallingEmoji() {
+            const emojiList = ["💸", "💰", "🚀", "🔥"];
+            const emoji = document.createElement("div");
+            emoji.classList.add("falling-emojis");
+            emoji.innerText = emojiList[Math.floor(Math.random() * emojiList.length)];
+            emoji.style.left = Math.random() * 100 + "vw";
+            emoji.style.animationDuration = Math.random() * 3 + 2 + "s";
+            document.querySelector(".emoji-container").appendChild(emoji);
+            
+            setTimeout(() => {
+                emoji.remove();
+            }, 5000);
+        }
+
+        setInterval(createFallingEmoji, 500);
+    </script>
+</body>
+</html>
